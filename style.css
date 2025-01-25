@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(
+        90deg,
+         rgba(241,237,220,1) 0%,
+         rgba(255,255,253,1) 50%,
+         rgba(252,246,232,1) 100%
+    );
+    padding: 70px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FF3C2A;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #FF3C2A;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right : 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    background-color: #4E4b5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #ffffff;
+}
+
+.borrar {
+    background-color: #FF3C2A;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor :pointer;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.header-txt {
+    flex-basis: 40%;
+}
+
+.header-txt h1{
+    font-size: 70px;
+    line-height: 1;
+    color: #181818;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    animation: pulse;
+    animation-duration: 3s; /* Duración de cada ciclo */
+    animation-iteration-count: infinite; /* Se repite indefinidamente */
+    animation-timing-function: ease-in-out; /* Hace la animación más fluida */
+}
+
+p{
+    color: #4b4b4b;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn-Informacion, .btn-agregar{
+    display : inline-block;
+    padding: 10px 30px;
+    color :#FF3C2A;
+    border: 2px solid #FF3C2A;
+    text-transform: capitalize;
+    border-radius : 15px;
+}
+
+.btn-Informacion:hover, .btn-agregar:hover{
+    color: #ffffff;
+    background-color: #FF3C2A;
+}
+
+.header-img {
+    flex-basis: 60%;
+}
+
+
+.oferta {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.oferta-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.oferta-1{
+    flex-basis: calc(30% - 30px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: #f7fafa;
+    border-radius: 10px;
+}
+
+.oferta-1 img {
+    width: 130px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 1;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.producto-txt p{
+    margin-bottom: 10px;
+}
+
+.precio{
+    color: #FF3C2A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-agregar {
+    padding: 4px 20px;
+}
+
+.logan-1 {
+    flex-basis: 40%;
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),url(images/ch1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.logan-1 h3{
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.logan-1 p{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.btn-Informacion2, .btn-vaciar{
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.promocion{
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.promocion-content{
+    display: flex;
+}
+
+.promocion-txt{
+    flex-basis: 50%;
+}
+
+.promocion-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.promocion-img img{
+    width: 250px;
+}
+
+.producto{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.producto-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-bottom: 50px; 
+}
+
+.blog {
+    padding: 50px 0 100px 0;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1{
+    flex-basis: calc(33.3% - 30px);
+    margin-top:  25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-txt{
+    padding: 40px;
+}
+
+.btn-leer{
+    display: inline-block;
+    border: 1px solid #181818;
+    padding: 8px 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #181818;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    animation: pulse;
+    animation-duration: 3s; /* Duración de cada ciclo */
+    animation-iteration-count: infinite; /* Se repite indefinidamente */
+    animation-timing-function: ease-in-out; /* Hace la animación más fluida */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Cambia a un color más oscuro en hover */
+}
+
+.whatsapp-icon {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    justify-content: center;
+    align-items: center;
+}
+/* Estilo para que el botón flote en la pantalla */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el fondo */
+    right: 15px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 17px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.link a {
+    font-size: 17px;
+    color: #181818;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color: #FF3C2A;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FF9000;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover{
+        color:#ffffff;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px 50px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin-bottom: 25px;
+    }
+
+    .oferta{
+        padding: 30px;
+    }
+
+    .oferta-content{
+        flex-direction: column;
+    }
+
+    .oferta-1{
+        margin-bottom: 30px;
+    }
+
+    .logan-1{
+        order: -2;
+        margin-bottom: 30px;
+    }
+
+    .promocion{
+        padding: 30px;
+
+    }
+
+    .promocion-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promocion-txt{
+        margin-bottom: 25px;
+    }
+
+    .promocion-img img{
+        width: 200px;
+    }
+
+    .producto{
+        padding: 30px;
+    }
+
+    .producto-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .blog{
+      padding: 30px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+
+
+}
