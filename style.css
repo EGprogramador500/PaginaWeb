@@ -14,11 +14,12 @@ body {
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
+    height: auto; /* Mantén las proporciones */
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -341,8 +342,10 @@ h3{
 /* Estilo para que el botón flote en la pantalla */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Distancia desde el fondo */
-    right: 15px; /* Distancia desde el borde derecho */
+    bottom: 15px; /* Reduce la distancia desde el borde */
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 15px;
     z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
 }
 
@@ -403,7 +406,7 @@ h3{
 
     .header{
         min-height: 0vh;
-        padding: 100px 30px 50px 30px;
+        padding: 50px 20px;
     }
 
     .header-content{
@@ -414,6 +417,14 @@ h3{
     .header-txt{
         margin-bottom: 25px;
     }
+
+    .header-txt h1 {
+        font-size: 40px; /* Reduce el tamaño del título */
+    }
+
+    .btn-Informacion, .btn-agregar {
+        font-size: 14px; /* Botones más pequeños */
+    }   
 
     .oferta{
         padding: 30px;
@@ -455,7 +466,7 @@ h3{
     }
 
     .producto-content{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 0;
     }
 
@@ -473,7 +484,55 @@ h3{
         text-align: center;
     }
 
-
+    @media (max-width: 768px) {
+        /* Ajustes adicionales para tablets y dispositivos más pequeños */
+        .header-txt h1 {
+            font-size: 32px;
+        }
+    
+        .producto-content {
+            grid-template-columns: repeat(1, 1fr); /* 1 columna en dispositivos pequeños */
+        }
+    
+        .promocion-img img {
+            width: 150px;
+        }
+    
+        .btn-Informacion, .btn-agregar {
+            font-size: 12px;
+            padding: 8px 20px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        /* Ajustes para pantallas muy pequeñas (teléfonos básicos) */
+        .menu {
+            padding: 10px;
+        }
+    
+        .header {
+            padding: 20px 10px;
+        }
+    
+        .header-txt h1 {
+            font-size: 24px;
+            margin-top: 70px;
+        }
+    
+        .oferta-1 img {
+            width: 100px;
+            height: auto; /* Mantén la proporción */
+        }
+    
+        .blog-1 {
+            margin: 10px 0;
+        }
+    
+        .whatsapp-button {
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+    }
 
 
 
